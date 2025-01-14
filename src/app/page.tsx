@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { client } from "@/sanity/lib/client"
 import Blogcard from "@/components/Blogcard";
 
@@ -15,7 +13,6 @@ const posts:Post[] = await client.fetch(query)
 
   return (
   <div>
-<Header />
 
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
@@ -30,7 +27,6 @@ const posts:Post[] = await client.fetch(query)
 </section>
 
 
-<Footer />
   </div>
 );
 }
