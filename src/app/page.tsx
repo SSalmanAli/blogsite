@@ -2,6 +2,9 @@ import { client } from "@/sanity/lib/client"
 import Blogcard from "@/components/Blogcard";
 
 
+export const revalidate = 10
+
+
 export default async function Home() {
 
 const query = `*[_type == 'blog']{
